@@ -1,22 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leis de Newton</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <h1>Voce joga CS?</h1>
-        <input type="radio" name="resposta" value="errada">Não, sou virgem! <br>
-        <input type="radio" name="resposta" value="correta">Sim, sou comedor! <br>
-        <input type="radio" name="resposta" value="errada">Não, transo com a mão na parede! <br>
-        <input type="radio" name="resposta" value="errada">Não, sou botchoco! <br>
-        <button type="button" onclick="funcaoCorrigir()">Corrigir</button>
-        <p id="retorno"></p>
-
-    </form>
-    <script src="script.js"></script>
-    
+    <header>
+        <h1>Leis de Newton</h1>
+        <h2>Conhecimento Fundamental</h2>
+        <button class="meu-botao"><a href="index2.html">Explicação</a></button>
+    </header>
+    <main>
+        <!-- Seção de Explicação -->
+        <section id="explanation">
+            <h2>Explicação das Leis de Newton</h2>
+            <p>
+              -  As Leis de Newton são três princípios fundamentais que descrevem o movimento de objetos. Elas são:
+            </p>
+            <ol>
+                <li>Primeira Lei de Newton: Também chamada de Lei da Inércia.</li><br>
+                <li>Segunda Lei de Newton: Relaciona força, massa e aceleração.</li><br>
+                <li>Terceira Lei de Newton: Lei de Ação e Reação.</li><br>
+            </ol>
+            <p>
+              -  Éstas leis são essenciais para compreender o comportamento dos objetos em movimento, e são amplamente aplicadas na física.
+            </p>
+        </section>
+        <!-- Seção de Exercícios -->
+        <section id="exercises">
+            <h2>Exercícios</h2>
+            <ol>
+                <li>
+                    <h3>Qual é o nome da Primeira Lei de Newton?</h3>
+                    <label>
+                        <input type="radio" name="q1" value="a"> Lei da Gravidade
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="b"> Lei da Inércia
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="c"> Lei da Ação e Reação
+                    </label>
+                </li>
+                <li>
+                    <h3>Qual é a unidade de medida da força de acordo com a Segunda Lei de Newton?</h3>
+                    <label>
+                        <input type="radio" name="q2" value="a"> Watt
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="b"> Pascal
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="c"> Newton
+                    </label><br>
+                </li>
+                <li>
+                    <h3>De acordo com a Terceira Lei de Newton, como as ações e reações se relacionam?</h3>
+                    <label>
+                        <input type="radio" name="q3" value="a"> Têm a mesma magnitude e direção, mas sentidos opostos.
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Têm magnitudes e direções diferentes.
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Não têm relação entre si.
+                    </label>
+                </li>
+            </ol>
+            <button id="submit-button">Verificar Respostas</button>
+            <div id="results"></div>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
