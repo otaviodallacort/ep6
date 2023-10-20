@@ -4,28 +4,28 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
 }
+
 header img{
     width: 300px;
 }
 
-main {
+.container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -36,18 +36,10 @@ h2 {
     font-size: 24px;
 }
 
-section {
-    margin-bottom: 20px;
+p {
+    line-height: 1.6;
 }
 
-/* Estilos para a grade (grid) */
-main {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-}
-
-/* Estilos para dispositivos menores (responsivo) */
 @media (min-width: 768px) {
     main {
         grid-template-columns: 1fr 1fr;
@@ -72,8 +64,4 @@ main {
   
   .meu-botao:hover {
     background-color: #00ddff; /* Altera a cor de fundo no hover */
-  }
-  #submit-button{
-    color: #007BFF;
-    border-radius: 5px;
   }
